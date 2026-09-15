@@ -1,3 +1,21 @@
+# Data Engineering Lab
+
+My workspace for the DataTalks.Club Data Engineering Zoomcamp, with a small independently runnable ingestion exercise in `portfolio/`.
+
+## Local portfolio exercise
+
+```bash
+python portfolio/ingest.py portfolio/sample.csv
+python -m pip install pytest
+python -m pytest tests -q
+```
+
+The exercise validates taxi records, loads them into SQLite in one transaction and upserts by trip ID. Rerunning a file leaves the warehouse row count unchanged. It reports a source checksum and rejects invalid dates, negative fares and incomplete schemas before writing.
+
+`portfolio/sample.csv` is synthetic test data. This local exercise is separate from the upstream Docker, Terraform, BigQuery, dbt, Spark and Kafka course modules below. Those modules retain their original authorship and setup requirements.
+
+## Upstream course documentation
+
 # Data Engineering Zoomcamp
 
 

@@ -14,3 +14,17 @@
 serving_dir
 .ipynb_checkpoints/
 !week_6_stream_processing/avro_example/data/rides.csv
+
+# Local development and generated outputs
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.venv/
+*.egg-info/
+build/
+dist/
+artifacts/
+mlruns/
+mlflow.db
+*.log
+.env
